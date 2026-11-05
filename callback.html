@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign-in finished</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17181a; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; } h2 { font-size: 1.1rem; margin-top: 28px; }
+  p, li { color: var(--fg); } .muted { color: var(--muted); }
+  a { color: inherit; } nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+  nav a { margin-right: 16px; color: var(--muted); }
+  code { word-break: break-all; padding: 8px; display: block; border: 1px solid var(--line); border-radius: 6px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Sign-in finished</h1>
+<p>Copy this page’s full address and paste it into the terminal that is waiting for it.</p>
+<code id="address"></code>
+<script>document.getElementById("address").textContent = location.href;</script>
+<nav><a href="/">Home</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of service</a></nav>
+</main>
+</body>
+</html>
